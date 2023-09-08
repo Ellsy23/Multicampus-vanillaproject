@@ -9,11 +9,16 @@
 
 임희정 - https://github.com/heejung0413
 김세준 - https://github.com/funizo
+<br>
 백서영 - https://github.com/guguguk
 이민지 - https://github.com/minjiLeee
 
 All - 이민지
+<br>
 E.M.I - 김세준
+<br>
 WORLDWIDE SHIPPING - 임희정
+<br>
 COMMUNITY - 백서영
+<br>
 EDMA - 이준현
