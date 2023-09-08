@@ -1,0 +1,67 @@
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+ abbr, acronym, address, big, cite, code, del, 
+ dfn, em, img, ins, kbd, q, s, samp, small, strike, 
+ strong, sub, sup, tt, var, b, u, i, center, dl, dt, 
+ dd, ol, ul, li, fieldset, form, label, legend, table, 
+ caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+ canvas, details, embed, figure, figcaption, footer, header,
+  hgroup, menu, nav, output, 
+ruby, section, summary, time, mark, audio, video {
+    color: rgb(51, 51, 51);
+    font-family: "Malgun Gothic", "맑은 고딕", Dotum, 돋움, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    vertical-align: baseline;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    outline: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;  
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%; 
+    background: beige; 
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+@media (max-width: 770px) {
+    .header .gnb ul.menu {
+      padding-left: 10px; 
+    }
+    
+    .header .gnb ul.menu > li {
+      font-size: 12px; 
+    }
+    
+    .sec_layout {
+      padding-left: 10px; 
+    }
+    
+    .cate_text > li {
+      padding: 0 10px 80px; 
+    }
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/product-detail.css" />
+  </head>
+  <body>
+    <!--메뉴-->
+    <nav id="nav">
+      <a href="index.html" id="logo">
+        <img src="img/logo.gif" width="200px" />
+      </a>
+
+      <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="#">E.M.I</a></li>
+        <li><a href="#">WORLDWIDE SHIPPING</a></li>
+        <li class="viewsub">
+          <a href="#">COMMUNITY</a>
+          <ul id="list">
+            <li>공지사항</li>
+            <li>상품주문</li>
+            <li>교환 및 반품</li>
+            <li>Q&A</li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="sub_menu">
+        <li>
+          <a href="#"><img src="img/icon_search.gif" alt="검색" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="http://www.edenmade.co.kr/_skin/edenmade/img/common/icon_my.gif"
+              alt="내정보"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_cart.gif" alt="장바구니" /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--상품 디테일정보-->
+    <section id="detail">
+      <figure id="detail_img">
+        <img id="detail_img_1" src="img/1.jpg" width="400" height="500" />
+      </figure>
+
+      <article id="detail_text">
+        <p>Max detail windbreaker</p>
+        <h4>108,000 원</h4>
+        <hr />
+        <br />
+        <h4>
+          수량
+          <input type="button" class="btn_min" value="-" onclick="btn_min()" />
+          <input type="text" class="amount" name="" id="" value="0" />
+          <input type="button" class="btn_add" value="+" onclick="btn_add()" />
+        </h4>
+        <h4>총 금액 : <span class="total_price"></span></h4>
+        <hr />
+        <br />
+        <br />
+        <button id="cart">장바구니</button><button id="buy">바로구매</button>
+      </article>
+    </section>
+
+    <!--수량 클릭시 금액변경-->
+    <script>
+      let price = 108000; //임의 고정 가격 설정
+      let total_price = (document.getElementsByClassName(
+        "total_price"
+      )[0].innerHTML = price);
+
+      function btn_add() {
+        // + 버튼 클릭시
+        let a = document.getElementsByClassName("amount")[0];
+        a.value = Number(a.value) + 1;
+        let qty = Number(a.value);
+
+        let o_price = document.getElementsByClassName("total_price")[0];
+        let final_price = Number(price * qty);
+        o_price.innerHTML = Number(final_price);
+      }
+
+      function btn_min() {
+        // - 버튼 클릭시
+        let a = document.getElementsByClassName("amount")[0];
+
+        if (a.value > 0) {
+          a.value = Number(a.value) - 1;
+          let qty = Number(a.value);
+
+          let total_price = document.getElementsByClassName("total_price")[0];
+          let final_price = Number(price * qty);
+          total_price.innerHTML = Number(final_price);
+        } else {
+          alreat("수량 오류");
+        }
+      }
+    </script>
+
+    <!--이미지 zoom 자바스크립트 코드-->
+    <script>
+      document.querySelectorAll("#detail_img").forEach((elem) => {
+        let x, y, width, height;
+        elem.onmouseenter = () => {
+          const size = elem.getBoundingClientRect();
+
+          x = size.x;
+          y = size.y;
+          width = size.width;
+          height = size.height;
+        };
+
+        elem.onmousemove = (e) => {
+          const horizontal = ((e.clientX - x) / width) * 100;
+          const vertical = ((e.clientY - y) / height) * 100;
+
+          elem.style.setProperty("--x", horizontal + "%");
+          elem.style.setProperty("--y", vertical + "%");
+        };
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+body{
+    margin: 0 150px 0 150px;
+}
+
+.header{
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#big-title{
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-style: italic;
+}
+
+.icon {
+    float: right;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse; 
+}
+
+.icon li{
+    padding: 10px;
+}
+
+.icon-navi{
+    float: left;
+    padding: 5px;
+}
+
+a{ 
+    text-decoration-line: none;
+    color: inherit;
+}
+
+
+/*nav*/
+.icon-nav{
+    height: auto;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: rgb(231, 231, 231);
+    float: left;
+}
+.navi1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+   
+    
+}
+
+
+
+.navi2{
+    padding: 2px;
+    margin: 5px;
+}
+
+
+
+
+
+article{
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 100%;
+    height: auto;
+    /* 상하좌우 정중앙 정렬하기 */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: inline;
+}
+section{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.board_col{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding:5px;
+    margin: 0px;
+}
+nav ul{list-style: none;}
+nav ul li{float: right;}
+.paging{
+    list-style: none;
+}
+table caption{
+    font-size: 15px;
+    padding: 5px 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 1rem auto;
+    background-color: white;
+    font-size: 1px;
+  }
+  
+  thead{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* 테이블 행 */
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    color: #000;
+  }
+  
+  /* 테이블 올렸을 때 */
+  tbody tr:hover {
+    background-color: #d3d3d3;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  /* 테이블 비율 */
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 20%;
+  }
+  
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 55%;
+  }
+  
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 30%;
+  }
+  
+  th, td {
+    border-left: none;
+    border-right: none;
+  }
+
+.page_write{
+    text-align: center;
+}
+.board_search{
+    text-align: center;
+}
+
+footer{
+    font-size: 5px;
+    height: 150px   ;
+    text-align: center;
+    line-height: 20px;
+}

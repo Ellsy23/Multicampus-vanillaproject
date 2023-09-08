@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDENMADE 이든메이드</title>
+    <link rel="stylesheet" href="/css/emi.css">
+</head>
+
+<body>
+
+    <div>
+        <span style="font-size: 40px; line-height: 0.4;">EDENMADE</span>
+        <ul id="mainMenu">
+            <li>HOME</li>
+            <li>SHOP</li>
+            <li>E.M.I</li>
+            <li>WORLDWIDE SHIPPING</li>
+            <li id="view">COMMUNITY
+                <ul>
+                    <li>공지사항</li>
+                    <li>상품주문</li>
+                    <li>교환 및 반품</li>
+                    <li>Q&A</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="sub_menu">
+            <li><a href=""><img src="http://www.edenmade.co.kr/_skin/edenmade/img/common/icon_search.gif"
+                        alt="검색"></a></li>
+            <li class="my"><a href=""><img src="http://www.edenmade.co.kr/_skin/edenmade/img/common/icon_my.gif"
+                        alt="마이페이지"></a></li>
+            <li><a href=""><img src="http://www.edenmade.co.kr/_skin/edenmade/img/common/icon_cart.gif"
+                        alt="장바구니"></a></li>
+        </ul>
+    </div>
+
+    <h2 id="subTitle">E.M.I</h2>
+
+
+    <img id="emiImg" src="https://edenmade.wisacdn.com/_data/banner/fef605519a28927654260c8475bc1863.jpg" alt="사진">
+
+
+    <footer class="foot">
+        <div class="page">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
+        <ul class="sns">
+            <li><a href="http://edenmade.co.kr/">blog</a></li>
+            <li><a href="https://www.instagram.com/ahun.e/">instagram</a></li>
+        </ul>
+
+        <div class="quick">
+            <ul>
+                <li><a href="http://www.edenmade.co.kr/content/content.php?cont=privacy">PRIVACY</a></li>
+                <li><a href="http://www.edenmade.co.kr/content/content.php?cont=uselaw">AGREEMENT</a></li>
+                <li><a href="http://www.edenmade.co.kr/mypage/order_list.php">TRACKING</a></li>
+                <li><a href="http://www.edenmade.co.kr/content/content.php?cont=company">CONTACT</a></li>
+            </ul>
+        </div>
+
+        
+        <!-- //하단메뉴 -->
+        <div class="shopinfo">
+            <!-- 쇼핑몰정보 및 에스크로 -->
+            <address class="info">
+                <span>상호 : EDENMADE</span>
+                <span>대표 : 강병훈</span>
+                <span>사업자등록번호 : 775-03-00838 <a href="http://www.edenmade.co.kr/content/content.php?cont=emi#"></a>
+                       <a>[사업자정보확인]</a></span>
+                <span>통신판매업신고번호 : 2017-서울마포-1440</span>
+                <span class="last">전화 : 02-498-0923 / 010-2402-9230</span><br>
+                <span>주소 : 서울특별시 성동구 용답동 233-2 원광빌딩 304호</span>
+                <span class="last">개인정보보호책임자 : 강병훈<a
+                        href="mailto:edenmade93@naver.com">(edenmade93@naver.com)</a></span><br>
+                <span class="last">고객님은 안전거래를 위해 현금으로 결제 시 저희 쇼핑몰에 가입한 구매안전서비스를 이용하실 수 있습니다. <a
+                        href="javascript:goValidEscrow(&#39;wp_edenmade&#39;);">[서비스 가입사실확인]</a></span>
+            </address>
+            <!-- //쇼핑몰정보 및 에스크로 -->
+            <p class="copyright">© 2018 <strong>EDENMADE</strong>. ALL RIGHTS RESERVED. <a
+                    href="http://by.wisa.co.kr/www.edenmade.co.kr" target="_blank" alt="위사 디자인&amp;호스팅"
+                    title="위사 디자인&amp;호스팅">designed &amp; managed by <strong>WISA.</strong></a></p>
+
+        
+
+        </div>
+        <a href="#" class="scrollToTop">↑</a>
+        </div>
+
+
+
+    </footer>
+
+
+    <script>
+        // document.getElementById("view").addEventListener("click", function () {
+        //     let listElement = document.getElementById("list")
+        //     if (listElement.style.display == "none") {
+        //         listElement.style.display = "block"
+        //     } else {
+        //         listElement.style.display = "none"
+        //     }
+        // })x  
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            window.addEventListener("scroll", function () {
+                var scrollToTopButton = document.querySelector('.scrollToTop');
+                if (window.scrollY > 100) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            });
+
+            
+            var scrollToTopButton = document.querySelector('.scrollToTop');
+            scrollToTopButton.addEventListener("click", function () {
+                var scrollDuration = 800;
+                var scrollStep = -window.scrollY / (scrollDuration / 15);
+                var scrollInterval = setInterval(function () {
+                    if (window.scrollY !== 0) {
+                        window.scrollBy(0, scrollStep);
+                    } else {
+                        clearInterval(scrollInterval);
+                    }
+                }, 15);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

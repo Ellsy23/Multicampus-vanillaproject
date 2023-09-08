@@ -1,0 +1,155 @@
+body{
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/*nav bar*/
+#logo {
+    float: left;
+ 
+}
+
+#nav {
+    padding: 100px 0px;
+
+}
+
+#nav li {
+    float: left;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    margin-left: 200px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a{
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 5px 20px;
+}
+
+#list li{
+    float: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding-top: 10px;
+    opacity: 0;
+}
+
+.menu li:hover #list li{
+    opacity: 1;
+}
+
+.menu > li.viewsub > a {
+    padding-right: 17px;
+    background: url(img/cm_open.gif) no-repeat right 8px;
+}
+
+.menu > li.viewsub:hover > a{
+    background: url(img/cm_close.gif) no-repeat right 8px;
+}
+
+.sub_menu {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+.sub_menu li{
+    display: block;
+    padding: 5px 10px;
+}
+
+
+/*상품상세css*/
+#detail {
+
+    padding-left: 130px;
+    float: left;
+}
+
+#detail_img {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#detail_img_1 {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(var(--zoom, 1));
+    transform-origin: var(--x) var(--y);
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+#detail_text {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    padding-top: 50px;
+    margin-left: 100px;
+}
+
+#detail_text p {
+    font-size: 20px;
+    color: rgb(47, 47, 47);
+    font-weight: 600;
+}
+
+hr {
+    width: 500px;
+    float: right;
+   
+}
+
+.btn_min, .btn_add {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+#cart {
+    width: 200px;
+    padding: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+    background-color: rgb(73, 72, 72);
+    color: white;
+    cursor: pointer;
+}
+
+#cart:hover {
+    background-color: black;
+}
+
+#buy {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#buy:hover {
+    background-color: white;
+}
+
+/*이미지 줌*/
+#detail_img:hover {
+    --zoom:3;
+}

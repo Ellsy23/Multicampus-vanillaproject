@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(197, 197, 197);
+}
+.menu{
+    list-style: none;
+    display: flex;
+    font-size: 60px;
+    margin: 40px 2100px;
+}
+.menu li{
+   padding: 50px;
+  
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu li a:hover{
+    color: black;
+}
+#main{ 
+    font-size: 90px;
+    margin-left: 350px ;
+    padding: 100px 2500px ; /*공지사항*/
+}
+.table-list {
+    font-size: 50px;
+    display: flex;
+    margin: 100px 0 200px 1200px;
+}
+ .table-list td, .table-list th{
+    border-bottom:1px solid rgb(161, 160, 160);
+    padding:  60px 250px;  
+}
+.table-list tr a{
+    text-decoration: none;
+    color: black;
+}
+.table-list tr a:hover{
+    color: while;
+}
+.pagenum{
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+.pagenum li{
+    display: inline;
+    padding: 0 30px; 
+}
+.pagenum li strong{
+    display: inline-block; 
+    font-size: 90px;  
+}
+.search-form {
+    margin:100px 800px;
+    font-size: 100px;
+    
+}
+.search-form input[type="text"]{
+    width: 1000px;
+    height: 100px;
+    font-size: 50px;
+    margin-left: 1600px;
+}
+.search-form button[type="submit"]{
+    height: 100px;
+    font-size:50px;
+    padding: 0px 70px;
+    background-color: rgb(72, 72, 72);
+    color: rgb(239, 238, 238);
+}
+.footer-list{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    font-size: 60px;
+    margin: 20px 2100px
+}
+.footer-list li{
+    padding: 50px 90px;
+}
+.footer-list li a{
+    text-decoration: none;
+    color: rgb(253, 252, 252);
+}
+.footer-list li a:hover{
+    color: black;
+}
+.footer{
+    margin: 10px 2900px;
+    font-size: 50px;
+}

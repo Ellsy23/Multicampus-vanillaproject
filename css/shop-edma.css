@@ -1,0 +1,287 @@
+#wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.header {
+    padding: 100px 0 80px;
+}
+
+.header .wrap_inner {
+    width: 100%;
+}
+
+.wrap_inner {
+    margin: 0 auto;
+}
+
+.header .gnb h1 {
+    float: left;
+    font-size: 40px;
+}
+
+.header .gnb ul.menu {
+    float: left;
+    padding-left: 47px;
+}
+
+.header .gnb ul.menu > li {
+    float: left;
+    position: relative;
+    font-size: 0;
+}
+
+.header .gnb ul.menu > li > a {
+    display: inline-block;
+    padding: 9px 15px 0;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Raleway';
+}
+
+.header .gnb ul.menu > li.submenu > a {
+    padding-right: 17px;
+    background: url(http://www.edenmade.co.kr/_skin/edenmade/img/common/cm_open.gif) no-repeat right 15px;
+}
+
+.header .gnb ul.menu > li.submenu > .list {
+    position: absolute;
+    width: 100%;
+    background: white;
+    display: none;
+    left: 0;
+    top: 29px;
+    padding: 7px 0;
+}
+
+.header .gnb ul.menu > li.submenu > .list li {
+    float: none;
+}
+
+.header .gnb ul.menu > li.submenu > .list li a {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    line-height: normal;
+    color: black;
+    word-break: break-all;
+}
+
+.header .gnb ul.sub_menu {
+    float: right;
+    margin-top: 10px;
+}
+
+.header .gnb ul.sub_menu > li {
+    float: left;
+    padding-top: 10px;
+}
+
+.header .gnb ul.sub_menu > li.my_page {
+    padding: 10px 19px 0 16px;
+}
+
+/* Content */
+
+#section {
+    padding-bottom: 170px;
+    min-height: 500px;
+}
+
+#section .sec_body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1800px;
+}
+
+h2.subtitle {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    padding: 0 0 70px;
+}
+
+#all_section .sec_layout {
+    position: relative;
+    padding-left: 130px;
+}
+
+#all_section .sec_layout .sec_side {
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+/*
+ #all_section .sec_layout .sec_side .sub_category {
+    top: 0px;
+    position: fixed;
+}
+*/
+
+#all_section .sec_layout .sec_side .sub_category {
+    position: relative;
+    width: 200px;
+}
+
+#all_section .sec_layout .sec_side .sub_category a {
+    display: block;
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+#all_section .sec_layout .sec_side .sub_category .cate_2 a {
+    font-weight: 800;
+}
+
+
+.cate_text {
+    width: 100%;
+    font-size: 0;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.cate_text > li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px 30px; 
+    vertical-align: top;
+    flex-basis: calc(33.33% - 60px); 
+    box-sizing: border-box;
+}
+
+.cate_text .box {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cate_text .box .img {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.cate_text .box .info {
+    text-align: center;
+}
+
+.cate_text .box .product {
+    padding-top: 60px;
+    color: black;
+    font-size: 15px;
+}
+
+.cate_text .box .price {
+    padding-top: 5px;
+}
+
+.cate_text .box .price p {
+    font-size: 15px;
+    color: black;
+}
+
+#all_section .page {
+    text-align: center;
+    font-size: 0;
+}
+
+.page li {
+    display: inline;
+    padding: 0 10px;
+    color: gray;
+}
+
+.page li strong {
+    display: inline-block;
+}
+
+.page li a {
+    display: inline-block;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    min-width: 1000px;
+    padding-bottom: 50px;
+}
+
+.footer .sns {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer .sns li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.footer .sns li a{
+    display: inline-block;
+    color: transparent;
+    background-position: center;
+}
+
+.footer .sns li.blog a {
+    background-image: url(http://www.edenmade.co.kr/_skin/edenmade/img/common/blog.png);
+    background-repeat: no-repeat;
+}
+
+.footer .sns li.instagram a {
+    background-image: url(http://www.edenmade.co.kr/_skin/edenmade/img/common/instagram.png);
+    background-repeat: no-repeat;
+}
+
+.footer_menu {
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.footer_menu ul {
+    text-align: center;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+}
+
+.footer_menu ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    color: black;
+    font-size: 10px;
+    font-family: 'Raleway';
+}
+
+/* Info */
+
+.shopinfo {
+    text-align: center;
+}
+
+.shopinfo .info {
+    font-size: 10px;
+    color: black;
+}
+
+.shopinfo .info span {
+    position: relative;
+}
